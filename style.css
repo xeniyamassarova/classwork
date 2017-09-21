@@ -6,27 +6,25 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -503px;
-  opacity: 0.6;
+  opacity: 0.4;
   top: 0px;
 }
 .main-conteiner {
   width: calc(1006px - 20px);
-  border: 1px solid black;
   margin: 9px auto;
-  position: relative;
 }
 .navbar {
   width: calc(100% - 132px);
   height: 96px;
   display: flex;
   justify-content: flex-end;
-  padding: 0 70px;
+  padding: 0 66px;
   align-items: center;
   position: relative;
 }
 .navbar .navbar-link {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   position: relative;
   top: 2px;
   margin-left: 29px;
@@ -45,7 +43,7 @@ body {
   width: 70px;
   height: 71px;
   position: absolute;
-  left: 70px;
+  left: 71px;
 }
 .navbar .logo img {
   width: 100%;
