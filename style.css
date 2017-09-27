@@ -120,7 +120,12 @@ body {
 .product-gallery .product-item {
   width: 32%;
   height: auto;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
+  transition: 2s;
+}
+.product-gallery .product-item:hover {
+  background: #F30E06;
+  opacity: 0.4;
 }
 .product-gallery .product-item img {
   max-width: 100%;
