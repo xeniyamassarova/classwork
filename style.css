@@ -118,7 +118,7 @@ body {
   justify-content: space-between;
 }
 .product-gallery .product-item {
-  width: 32%;
+  max-width: 32%;
   height: auto;
   margin-bottom: 40px;
   transition: 2s;
