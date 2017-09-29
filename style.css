@@ -122,8 +122,10 @@ body {
   height: auto;
   margin-bottom: 40px;
   transition: 2s;
+  position: relative;
+  display: inline-block;
 }
-.product-gallery .product-item:hover {
+.product-gallery .product-item:hover .product-img {
   background: #F30E06;
   opacity: 0.4;
 }
@@ -135,4 +137,26 @@ body {
   .product-gallery .product-item {
     max-width: 48%;
   }
+}
+.product-gallery .product-item .product-arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transition: opacity 2s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-gallery .product-item .product-arrow .arrow-img {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: opacity 2s;
+}
+.product-gallery .product-item .product-arrow:hover {
+  background: rgba(197, 24, 24, 0.4);
+  opacity: 1;
 }
