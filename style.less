@@ -196,12 +196,11 @@ body{
    
 
     .footer-container{
-        border: 1px solid;
         width: 100%;
         margin-top: 24px;
+        background-color: gray;
     
             .footer-container-item{
-                border: 1px solid;
                 width: 33%;
                 min-height: 300px;
                 color: whitesmoke;
@@ -307,6 +306,9 @@ body{
                             font-size: 10px;
                             margin-bottom: 0;
                         }
+                        .follow-button{
+                            margin-left: 50px;
+                        }
                     }
 
                 }
@@ -315,9 +317,36 @@ body{
             
     }
     .footer-menu{
-        border: 1px solid;
         width: 100%;
-        height: 40px;
+        background-color: @primery-color;
+        
+        margin-left: -15px;
+         .footer-navbar{
+            width: 500px;
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: 500px) {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        .footer-navbar-item{
+            width: 20%;
+            text-transform: uppercase;
+            font-size: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+        
+
+
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+        }
+    }
 
     }
         
