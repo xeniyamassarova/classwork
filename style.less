@@ -196,14 +196,24 @@ body{
    
 
     .footer-container{
-        width: 100%;
+        max-width: 100%;
         margin-top: 24px;
+        min-height: 305px;
         background-color: gray;
+        margin-left: 0;
+        margin-right: 0;
+
+        @media (max-width: 660px) {
+            
+            display: flex;
+            flex-direction: column;
+        }
     
             .footer-container-item{
-                width: 33%;
-                min-height: 300px;
+                //width: auto;
+                min-height: auto;
                 color: whitesmoke;
+                margin-bottom: 10px;
 
                 .footer-aboutUs{
                     padding-top: 8px;
@@ -319,8 +329,8 @@ body{
     .footer-menu{
         width: 100%;
         background-color: @primery-color;
-        
-        margin-left: -15px;
+        margin-right: 0;
+        margin-left: 0;
          .footer-navbar{
             width: 500px;
             display: flex;
