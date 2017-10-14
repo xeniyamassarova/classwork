@@ -245,6 +245,7 @@ body{
                 }
 
                 .footer-tweets{
+                    padding-left: 28px;
                     .tweets-header{
                         padding-top: 8px;
                         padding-left: 28px;
@@ -253,12 +254,22 @@ body{
                     }
                     .tweets-list{
                         padding-left: 30px;
+                        width: max-content;
                     ul {
                         list-style: none;
                         padding: 0;
                       }
                       li {
                         padding-left: 1.3em;
+                        display: flex;
+                        justify-content: center;
+
+                        a:active{
+                            color: yellow;
+                        }
+                        a:visited{
+                            color: yellow;
+                        }
                       }
                       li:before {
                         content: "\f099";
@@ -268,10 +279,17 @@ body{
                         margin-right: 10px;
                         width: 1.3em;
                       }
+                      .tweets-link{
+                        font-size: 10px;
+                      }
+                      a:active{
+                          color: yellow;
+                      }
                     }
                 }
 
                 .footer-contact{
+                    padding-left: 10px;
                     .contact-header{
                         padding-top: 8px;
                         padding-left: 46px;
@@ -282,9 +300,14 @@ body{
                     .contact-list{
                         padding-top: 22px;
                         line-height: 84%;
+                        
                         .item{
                             padding-left: 40px;
                             font-size: 10px;
+                            display: flex;
+                            span{
+                               
+                            }
                         }
                         .item::before{
                             font-family: FontAwesome;
@@ -349,6 +372,16 @@ body{
             justify-content: center;
             align-items: center;
             color: whitesmoke;
+            cursor: pointer;
+            
+                        &:hover{
+                            background-color: lightgrey;
+                        }
+            
+                        &.active{
+                            background-color: @secondary-color;
+                    }
+            
         
 
 
